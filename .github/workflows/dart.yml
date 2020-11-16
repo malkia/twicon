@@ -15,10 +15,10 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: '12.x'
-    - uses: subosito/flutter-action@v1
+    - uses: subosito/flutter-action@v1.4.0
       with:
-        flutter-version: '1.24.x' # you can use 1.12
-        channel: 'beta' # Currently you have to use beta channel for Flutter web.
+        flutter-version: '1.24.x'
+        channel: 'dev'
     - name: Upgrades flutter
       run: flutter upgrade
       working-directory: ./example
@@ -29,7 +29,7 @@ jobs:
       run: flutter packages get
       working-directory: ./example
     - name: Build Web
-      run: flutter build web
+      run: flutter build web --release
       working-directory: ./example
     - name: Deploy
       run: |
