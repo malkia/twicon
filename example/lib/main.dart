@@ -7,9 +7,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) => MaterialApp(
-        title: 'Taiwan Icons',
+        title: 'Taiwan Icons (2)',
         theme: ThemeData(primarySwatch: Colors.blue),
-        home: MyHomePage(title: 'Taiwan Icons'),
+        home: MyHomePage(title: 'Taiwan Icons (two)'),
       );
 }
 
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         top: 20, left: 10, right: 10, bottom: 0),
                     sliver: SliverToBoxAdapter(
                         child: Text(
-                      'This is the list of the icons contained in "twicon" package.',
+                      'This is the list of the icons contained in "twicon" package. (2)',
                       style: Theme.of(context).textTheme.title,
                     ))),
                 SliverPadding(
